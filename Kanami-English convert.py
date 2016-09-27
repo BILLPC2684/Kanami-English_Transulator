@@ -1,6 +1,6 @@
 import sys
 if len(sys.argv) < 3:
- print('Error: args less than 2,\nusage: python3 "Kanami-English convert.py" <0-kanami/1-english> <"words">')
+ print('Error: args less than 2,\nusage: python3 "Kanami-English convert.py" <0-english>kanami/1-english>kanami> <"words">')
  sys.exit()
 for item in sys.argv:
  print(item)
