@@ -1,12 +1,13 @@
 import sys
+if len(sys.argv) < 3:
+ print('Error: args less than 2,\nusage: python3 "Kanami-English convert.py" <0-kanami/1-english> <"words">')
+ sys.exit()
 for item in sys.argv:
  print(item)
 if sys.argv[1] == "0":
- print(0)
- exec(open("./WordsLists/English.config").read())
-elif sys.argv[1] == "1":
- print(1)
  exec(open("./WordsLists/Kanami.config").read())
+elif sys.argv[1] == "1":
+ exec(open("./WordsLists/English.config").read())
 startfrom = 0
 for item in sys.argv:
  if startfrom > 1:
